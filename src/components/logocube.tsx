@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 
-const LogoCubeScroller = () => {
+const LogoCubeScroller:React.FC = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
   const containerRef = useRef(null);
   

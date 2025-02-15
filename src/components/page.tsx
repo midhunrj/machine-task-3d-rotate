@@ -1,31 +1,31 @@
-import React, { useEffect, useRef, useState } from 'react'
+
 import LogoCubeScroller from './logocube'
 
 const Page = () => {
-    const[scrollProgress,setScrollProgress]=useState(0)
-     const containerRef = useRef(null);
+    // const[scrollProgress,setScrollProgress]=useState(0)
+    //  const containerRef = useRef(null);
       
-    useEffect(()=>{
-        if(!containerRef.current)
-        {
-            return
-        }
-        const scrollStart = window.innerHeight;
-      const scrollEnd = document.body.scrollHeight - window.innerHeight * 2;
-      const currentScroll = window.scrollY - scrollStart;
-      const maxScroll = scrollEnd - scrollStart;
+//     useEffect(()=>{
+//         if(!containerRef.current)
+//         {
+//             return
+//         }
+//         const scrollStart = window.innerHeight;
+//       const scrollEnd = document.body.scrollHeight - window.innerHeight * 2;
+//       const currentScroll = window.scrollY - scrollStart;
+//       const maxScroll = scrollEnd - scrollStart;
       
-      const progress = Math.max(0, Math.min(1, currentScroll / maxScroll));
-      setScrollProgress(progress);
-    })
-   const getBlurAmount=()=>{
-    if(scrollProgress<0.3)
-    {
-        return (scrollProgress/0.3)*10
-    }
+//       const progress = Math.max(0, Math.min(1, currentScroll / maxScroll));
+//       setScrollProgress(progress);
+//     })
+//    const getBlurAmount=()=>{
+//     if(scrollProgress<0.3)
+//     {
+//         return (scrollProgress/0.3)*10
+//     }
     
-   }
-    const blurAmount=getBlurAmount()
+//    }
+//     const blurAmount=getBlurAmount()
   return (
     <>
     <div className="sticky bg-[#331707] text-white">
