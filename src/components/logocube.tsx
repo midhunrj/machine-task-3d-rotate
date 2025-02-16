@@ -87,7 +87,7 @@ const LogoCubeScroller:React.FC = () => {
                   deliver tailored solutions that drive impact and inspire growth.
                 </p>
         </div>:""}
-        <div className="flex gap-3 sm:gap-4 md:gap-6">
+        <div className="flex justify-center gap-3 sm:gap-4 md:gap-6">
             {[0, 1, 2].map(colIndex => (
               <div key={colIndex} className={`flex flex-col justify-end ${colIndex === 1 ? 'gap-3 sm:gap-4 md:gap-6' : ''}`}>
                 {[0, 1].map(rowIndex => {
@@ -136,7 +136,7 @@ const LogoCubeScroller:React.FC = () => {
                       }}
                     >
                     
-                      <div className="absolute inset-0 bg-pink-700" />
+                      <div className="absolute inset-0 bg-[#FFE9D9]" />
                       
                       {cubeTransform > 0.2 && (
                         <div className="absolute inset-0 w-full h-full" style={{ transformStyle: 'preserve-3d' }}>
